@@ -5,6 +5,11 @@ on:
     branches:
       - main # Change to your main branch
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -36,5 +41,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          publish_dir: ./siteCv/dist # Change this to your build folder
+          publish_dir: ./dist # Change this to your build folder
           github_token: ${{ secrets.GITHUB_TOKEN }}
