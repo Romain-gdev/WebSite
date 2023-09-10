@@ -24,7 +24,9 @@ jobs:
           yarn install
 
       - name: Build
-        run: yarn build
+        run: |
+          cd siteCv 
+          yarn install
 
   deploy:
     needs: build
