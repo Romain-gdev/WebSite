@@ -20,12 +20,9 @@ jobs:
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
-        run: cd siteCv
 
       - name: Build
-        run: |
-          cd siteCv
-          yarn install
+        run: yarn install
 
       - name: Uplaod production files
         uses: actions/upload-artifact@v2
