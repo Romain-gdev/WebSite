@@ -12,7 +12,7 @@ const App = () => {
         <Header>
           <div className="logo" />
           <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
-            <Menu.Item key="1"><Link to="/home">Homes</Link></Menu.Item>
+            <Menu.Item key="1"><Link to="/home">Home</Link></Menu.Item>
             <Menu.Item key="2"><Link to="/current-year">Current Year</Link></Menu.Item>
             <Menu.Item key="3"><Link to="/experience">Experience</Link></Menu.Item>
           </Menu>
