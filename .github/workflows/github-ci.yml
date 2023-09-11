@@ -24,8 +24,8 @@ jobs:
 
       - name: Build
         run: |
-        cd siteCv
-        yarn install
+          cd siteCv
+          yarn install
 
       - name: Uplaod production files
         uses: actions/upload-artifact@v2
