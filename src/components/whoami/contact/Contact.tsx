@@ -1,6 +1,4 @@
 import React from "react";
-import {EmailSvg} from "../../../assets/email-svgrepo-com.svg"
-import Icon from "@ant-design/icons";
 
 export function Contact() : JSX.Element{
 
@@ -14,7 +12,6 @@ export function Contact() : JSX.Element{
             <div className="flex justify-center font-semibold">
                 Ci-joints mon numéro de téléphone et mon adresse mail
             </div>  
-            <Icon component={EmailSvg} />
         </div>  
         </>         
     )
