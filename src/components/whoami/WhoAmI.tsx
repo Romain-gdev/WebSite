@@ -1,15 +1,23 @@
 import React from "react";
 import { FirstSection } from "./FirstSection";
 import { Skills } from "./Skills";
+import { LastInfos } from "./LastInfos";
 
 
 export function WhoAmI(): JSX.Element {
 
 
     return (<>
-        <div className="ml-8 mt-8 grid grid-cols-2 gap-4">
-            <FirstSection />
-            <Skills />
+        <div className="ml-8 mt-8 overflow-hidden grid grid-cols-1 gap-x-4 lg:grid lg:grid-cols-2 md:gap-x-4">
+            <div className="col-span-1 md:col-span-1">
+                <FirstSection />
+            </div>
+            <div className="col-span-1 md:col-span-1">
+                <Skills />
+            </div>
+        </div>
+        <div>
+            <LastInfos />
         </div>
     </>)
 }

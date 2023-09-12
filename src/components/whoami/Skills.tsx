@@ -4,7 +4,7 @@ import React from "react"
 
 export function Skills(): JSX.Element {
 
-    return <div className="">
+    return <div className="mr-[5%]">
         <span className="font-semibold">Environnement .NET (.NET Framework)</span>
         <Progress percent={90} showInfo={false} type={"line"} format={(number, percent) => "Done"} />
         <span className="font-semibold">Typescript JSX </span>
