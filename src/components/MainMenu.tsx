@@ -24,11 +24,6 @@ export function MainMenu(): JSX.Element {
                 // onClick: () => navigate("experiences"),
             },
             {
-                key: 4,
-                label: "CONTACT",
-                // onClick: () => navigate("contact"),
-            },
-            {
                 key: 5,
                 label: "TOUS MES PROJETS",
                 // onClick: () => navigate("allprojects"),
