@@ -32,6 +32,7 @@ export function Formation(): JSX.Element {
             description: "Je souhaitais avoir une formation professionalisante en 2 ans, " +
                 "consacrer le plus de temps possible à l'apprentissage et bénéficier de l'expérience d'un stage professionnel.",
         },
+
     ];
 
     return (<div>
@@ -40,8 +41,8 @@ export function Formation(): JSX.Element {
                 <List.Item key={item.title} className="font-semibold">
                     <List.Item.Meta title={<span className="text-2xl">{item.year} - {item.title}</span>}
                         description={<>
-                            <span className="text-justify text-lg font-semibold">{item.campus}<br/></span>
-                             <span className="text-xl text-justify">{item.description}</span>
+                            <span className="text-justify text-lg font-semibold">{item.campus}<br /></span>
+                            <span className="text-xl text-justify">{item.description}</span>
                         </>} />
                 </List.Item>
             )}

@@ -3,6 +3,7 @@ import { Layout, Menu } from 'antd';
 import { Identity } from './components/Identity'
 import { WhoAmI } from './components/whoami/WhoAmI'
 import { MainMenu } from './components/MainMenu'
+import { Formation } from "./components/formation/Formation";
 import './style/App.css';
 
 const { Header, Footer } = Layout;
@@ -15,12 +16,13 @@ export function App() {
     <div className='bg-[#ADD8E6] min-h-screen min-w-screen no-scrollbar'>
       <Identity />
       <div className='pt-8'>
-        <MainMenu />
+        <WhoAmI />
+        <Formation />
       </div>
-      
-      <div className='bg-[#87CEEB] rounded-2xl'>
-      {outlet || <WhoAmI />}
-      </div>
+
+      {/* <div className='bg-[#87CEEB] rounded-2xl'>
+        {outlet || <WhoAmI />}
+      </div> */}
     </div>
   );
 };
