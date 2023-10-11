@@ -12,15 +12,15 @@ export function App() {
   const outlet = useOutlet();
 
   return (
-    <div className='bg-[#ADD8E6] min-h-screen min-w-screen no-scrollbar'>
+    <div className='bg-gradient-to-br from-fuchsia-900 to-[#261447] min-h-screen min-w-screen no-scrollbar text-white' >
       <Identity />
       <div className='pt-8'>
         <MainMenu />
       </div>
       
-      <div className='bg-[#87CEEB] rounded-2xl'>
+      <div >
       {outlet || <WhoAmI />}
       </div>
     </div>
   );
-};
+}

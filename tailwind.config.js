@@ -2,8 +2,16 @@
 module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+
   },
   plugins: [],
-  darkMode: 'class',
+  variants: {
+    extend: {
+      backgroundColor: ['active'],
+      // ...
+      borderColor: ['focus-visible', 'first'],
+      // ...
+      textColor: ['visited'],
+    }
+  },
 }

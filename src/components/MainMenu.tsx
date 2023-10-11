@@ -26,7 +26,7 @@ export function MainMenu(): JSX.Element {
             {
                 key: 5,
                 label: "TOUS MES PROJETS",
-                // onClick: () => navigate("allprojects"),
+                onClick: () => navigate("allprojects"),
             },
         ]}>
         </Menu>
